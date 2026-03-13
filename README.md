@@ -1,16 +1,75 @@
-# React + Vite
+# 📸 Celebrare Photo Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Photo Gallery Web App built with React, Vite, and Tailwind CSS.
+This project was developed as part of the Celebrare Frontend Internship Pre-Screening Assignment.
 
-Currently, two official plugins are available:
+The application fetches photos from the Picsum Photos API, displays them in a responsive grid, allows users to search by photographer, and lets them mark photos as favourites with persistence using localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- Fetch photos from the Picsum Photos API
+- Responsive image grid layout
+- Real-time search filtering by photographer name
+- Favourite photos with a heart toggle
+- Favourite state managed using React useReducer
+- Favourites persist using localStorage
+- Custom React hook for API fetching
+- Performance optimization using useMemo and useCallback
+- Loading spinner while fetching data
+- Error handling UI
+- Image lazy loading and skeleton shimmer
+- Smooth card animations and hover effects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- TailwindCss
+- Javascript
+- Picsum API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```
+ .
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   └── favicon.svg
+├── README.md
+├── src
+│   ├── App.jsx
+│   ├── assets
+│   ├── components
+│   │   ├── Loading.jsx
+│   │   ├── PhotoCard.jsx
+│   │   ├── PhotoGrid.jsx
+│   │   └── SearchBar.jsx
+│   ├── hooks
+│   │   └── useFetchPhotos.js
+│   ├── index.css
+│   ├── main.jsx
+│   └── reducers
+│       └── favouritesReducer.js
+├── tailwind.config.js
+└── vite.config.js
+```
+
+## ⚙️ Installation & Setup
+
+```
+ git clone https://github.com/Mayank9056-MM/celebrare-gallery
+cd celebrare-gallery
+```
+
+```
+ npm install
+ npm run dev
+```
+
+## 👨‍💻 Author
+
+`Mayank Mahajan`
