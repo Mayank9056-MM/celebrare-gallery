@@ -1,1 +1,73 @@
 @import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #fdfaf5;
+    color: #1c1c1e;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.5s ease forwards;
+  }
+
+  /* Staggered animation delays for grid cards */
+  .card-delay-0 {
+    animation-delay: 0ms;
+  }
+  .card-delay-1 {
+    animation-delay: 50ms;
+  }
+  .card-delay-2 {
+    animation-delay: 100ms;
+  }
+  .card-delay-3 {
+    animation-delay: 150ms;
+  }
+  .card-delay-4 {
+    animation-delay: 200ms;
+  }
+  .card-delay-5 {
+    animation-delay: 250ms;
+  }
+  .card-delay-6 {
+    animation-delay: 300ms;
+  }
+  .card-delay-7 {
+    animation-delay: 350ms;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-pop {
+  animation: pulseHeart 0.3s ease;
+}
